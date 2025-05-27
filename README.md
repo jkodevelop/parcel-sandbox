@@ -50,6 +50,31 @@ In package.json
 
 Parcel V2 has sass support built-in, it will auto install sass the moment sass files are included.
 
+## 3. posthtml, templating
+
+To support html templating. using this `<include src="./tpl/header-tpl.html"></include>` in the index.html for easier templating.
+
+1. install the package
+```
+npm install posthtml-include --save-dev
+```
+
+2. add the file `.posthtmlrc`, point to `./src` folder
+```
+{
+  "plugins": {
+    "posthtml-include": {
+      "root": "./src"
+    }
+  }
+}
+```
+
+3. using this feature in `index.html`
+```
+<include src="src/tpl/tplA.html"></include>
+```
+
 
 
 #### source
