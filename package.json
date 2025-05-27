@@ -5,8 +5,8 @@
   "source": "src/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel --port=1234", 
-    "build": "parcel build"
+    "start": "parcel --port=1234 --open",
+    "build": "parcel build --public-url ./ --dist-dir dist"
   },
   "repository": {
     "type": "git",

@@ -36,6 +36,16 @@ In package.json
 }
 ```
 
+## 1c. notes on Parcel V2 build features
+
+1. Currently Parcel v2 does not have a library or feature to cleanup the `./dist` folder after. The folder needs to be cleared out manually.
+
+2. some CLI options
+```
+"start": "parcel --port=1234 --open",
+"build": "parcel build --public-url ./ --dist-dir dist"
+```
+
 
 
 #### source
