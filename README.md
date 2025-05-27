@@ -46,6 +46,10 @@ In package.json
 "build": "parcel build --public-url ./ --dist-dir dist"
 ```
 
+## 2. SASS support
+
+Parcel V2 has sass support built-in, it will auto install sass the moment sass files are included.
+
 
 
 #### source

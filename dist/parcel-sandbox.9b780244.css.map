@@ -1,1 +1,0 @@
-{"mappings":"ACAA","sources":["parcel-sandbox.9b780244.css","src/style.css"],"sourcesContent":["h1 {\n  color: #ff69b4;\n  font-family: cursive;\n}\n/*# sourceMappingURL=parcel-sandbox.9b780244.css.map */\n","h1 {\r\n  color: hotpink;\r\n  font-family: cursive;\r\n}"],"names":[],"version":3,"file":"parcel-sandbox.9b780244.css.map"}
