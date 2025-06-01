@@ -1,1 +1,0 @@
-{"mappings":"ACEA","sources":["parcel-sandbox.cfe15c8e.css","src/style.scss"],"sourcesContent":["h1 {\n  color: #aa866a;\n  font-family: cursive;\n}\n/*# sourceMappingURL=parcel-sandbox.cfe15c8e.css.map */\n","$primary-color: #aa866a;\r\n\r\nh1 {\r\n  color: $primary-color;\r\n  font-family: cursive;\r\n}"],"names":[],"version":3,"file":"parcel-sandbox.cfe15c8e.css.map"}
