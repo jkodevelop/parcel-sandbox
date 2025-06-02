@@ -1,0 +1,1 @@
+{"mappings":";AAGA;;;;AAIE","sources":["src/style.scss"],"sourcesContent":["$primary-color: #aa866a;\r\n\r\n@tailwind base;\r\n@tailwind components;\r\n@tailwind utilities;\r\n\r\nh1 {\r\n  color: $primary-color;\r\n  font-family: cursive;\r\n}"],"names":[],"version":3,"file":"parcel-sandbox-compare.b2d9cf43.css.map","sourceRoot":"/__parcel_source_root/"}

@@ -56,7 +56,7 @@ To support html templating. using this `<include src="./tpl/header-tpl.html"></i
 
 1. install the package
 ```
-npm install posthtml-include --save-dev
+npm install --save-dev posthtml-include
 ```
 
 2. add the file `.posthtmlrc`, point to `./src` folder
@@ -74,6 +74,37 @@ npm install posthtml-include --save-dev
 ```
 <include src="src/tpl/tplA.html"></include>
 ```
+
+## 4. add TAILWIND css
+
+This example uses Tailwind CSS v4+. v4 integration with parcel is very simple.
+
+1. install the packages
+```
+npm install --save-dev tailwindcss @tailwindcss/postcss
+```
+
+2. add `.postcssrc` with this content
+```
+{
+  "plugins": {
+    "@tailwindcss/postcss": {}
+  }
+}
+```
+
+3. usage example, include `@tailwind` in scss files
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1{ ... }
+```
+
+**NOTE:** because SASS is added instead of using `@import "tailwindcss";` in a css file. The `@tailwind <component>` should be used in scss/sass files instead.
+
+source: https://tailwindcss.com/docs/installation/framework-guides/parcel
 
 
 

@@ -1,5 +1,9 @@
 $primary-color: #aa866a;
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 h1 {
   color: $primary-color;
   font-family: cursive;
