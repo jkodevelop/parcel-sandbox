@@ -106,6 +106,9 @@ h1{ ... }
 
 source: https://tailwindcss.com/docs/installation/framework-guides/parcel
 
+Useful resources: tailwind css classes
+https://tailwindcomponents.com/cheatsheet/
+
 
 
 #### source
