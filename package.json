@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel --port=1234 --open",
-    "build": "parcel build --public-url ./ --dist-dir dist"
+    "build": "parcel build --public-url ./ --dist-dir dist",
+    "sync": "browser-sync start --proxy \"localhost:1234\" --files \"dist/*.*\"",
+    "dev": "npm start | npm run sync",
+    "dev:win": "start npm start & start npm run sync" 
   },
   "repository": {
     "type": "git",
@@ -26,6 +29,7 @@
   "homepage": "https://github.com/jkodevelop/parcel-sandbox#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.15.2",
+    "browser-sync": "^3.0.4",
     "parcel": "^2.15.2",
     "posthtml-include": "^2.0.1"
   }

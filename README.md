@@ -75,6 +75,31 @@ npm install posthtml-include --save-dev
 <include src="src/tpl/tplA.html"></include>
 ```
 
+## ADDITIONAL FEATURE: browser-sync
+
+**Browser-sync** allows for project to run on mutiple browser windows and sychronize the user interactions across them. This is optional but useful for testing UI/UX on different type of screen and windows sizes.
+
+Note: this is setup to runs Browser-sync parallel to parcel's devserver. Meaning just running two servers and processes. localhost:1234 is parcel server and localhost:3000/3001 is the browser-sync server. Both are watching for changes in `./dist` folder.
+
+1. install `browser-sync` package
+```
+npm install --save-dev browser-sync
+```
+
+2. A) run two processes
+
+Easiest option is to open two terminals and run these commands in order. First `npm start`. Second `npm run sync`.
+
+2. B) run a command that combines both.
+
+Example:
+```
+scripts:{
+  "dev": "npm start | npm run sync",
+  "dev:win": "start npm start & start npm run sync" 
+}
+```
+
 
 
 #### source
